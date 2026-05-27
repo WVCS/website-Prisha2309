@@ -1,20 +1,41 @@
 <html>
-<nav class="navbar">
-  <!-- Home Link with Smiley -->
-  <a href="#" class="nav-item">
-    <span class="smiley-icon">😊</span> Home
-  </a>
-  
-  <!-- Projects Link -->
-  <a href="#projects" class="nav-item">Projects</a>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prisha's Tab Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<div id="home">
-  <h2>Prisha's Website</h2>
-</div>
+  <input type="radio" id="tab-home" name="nav-tabs" checked>
+  <input type="radio" id="tab-projects" name="nav-tabs">
 
-<div id="projects" class="project-container">
-  <iframe width="392" height="620" src="https://studio.code.org/projects/applab/v8NTq66q-TITb-2966-92q8-F2jz8NFF9z2z/embed?nosource"></iframe>
-  <iframe width="392" height="620" src="https://studio.code.org/projects/applab/2E6jFTbO-qE28-2b8E-IONz-EFN1b1v1IFE9/embed?nosource"></iframe>
-</div>
+  <nav class="navbar">
+    <div class="nav-links">
+      <label for="tab-home" class="nav-item id-home">Home</label>
+      <label for="tab-projects" class="nav-item id-projects">Projects</label>
+    </div>
+  </nav>
+
+  <main class="content-container">
+    
+    <section class="home-section">
+      <h2>Prisha's Website</h2>
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/015/634/808/small/circular-hud-connection-with-circuit-board-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg" alt="Futuristic Tech Background" class="homepage-image">
+    </section>
+    
+    <section class="projects-section">
+      <div class="projects-grid">
+        <iframe width="392" height="620" src="https://studio.code.org/projects/applab/v8NTq66q-TITb-2966-92q8-F2jz8NFF9z2z/embed?nosource"></iframe>
+        <iframe width="392" height="620" src="https://studio.code.org/projects/applab/2E6jFTbO-qE28-2b8E-IONz-EFN1b1v1IFE9/embed?nosource"></iframe>
+      </div>
+    </section>
+    
+  </main>
+
+</body>
+</html>
 </html>
